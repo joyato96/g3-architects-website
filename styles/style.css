@@ -215,12 +215,31 @@ main {
 .sponsors-img-container img {
     width: 135px;
 }
+/* footer styles */
+.footer-content {
+    margin: 100px 240px 100px 240px;
+}
+.footer-description {
+    border-radius: 8px;
+    background: #FFF4E7;
+    color: #424242;
+    padding: 39px 410px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
 
 /* responsive media queries */
 /* mobile device */
 @media screen and (max-width:576px) {
     header {
         padding: 20px;
+    }
+    .footer-content {
+        margin: 5px;
+    }
+    .footer-description{
+        padding: 39px;
     }
 
     nav,
@@ -259,21 +278,6 @@ main {
 
 }
 
-/* footer styles */
-.footer-content {
-    margin-left: 240px;
-    margin-right: 240px;
-    margin-bottom: 220px;
-}
-
-.footer-description {
-    border-radius: 8px;
-    background: #FFF4E7;
-    color: #424242;
-    padding: 39px 410px;
-    font-size: 10px;
-    font-weight: 400;
-}
 
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -286,6 +290,12 @@ main {
     .features,
     .sponsors-img-container {
         flex-direction: column;
+    }
+    .footer-description{
+        padding: 70px;
+    }
+    .footer-content {
+        margin: 5px;
     }
 
     .facts-card-container {
